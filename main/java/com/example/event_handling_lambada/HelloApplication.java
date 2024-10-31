@@ -51,5 +51,12 @@ public class HelloApplication extends Application {
                 text.setX(text.getX() < pane.getWidth() - 100 ?
                         text.getX() + 5 : pane.getWidth() - 100)
         );
+
+        // Create a scene and place it in the stage
+        Scene scene = new Scene(borderPane, 400, 350);
+        primaryStage.setTitle("AnonymoysHandlerDemo"); // Set title
+        primaryStage.setScene(scene); // Place the scene in the stage
+        primaryStage.show();
+
     }
 }
